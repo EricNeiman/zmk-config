@@ -6,7 +6,7 @@
   keymap {
     compatible = "zmk,keymap";
     default_layer = <
-      &KP_0
+      &KP_N0
     >;
   };
 };
