@@ -3,4 +3,14 @@ if SHIELD_ESPLIT
 config ZMK_Keyboard_NAME
     default "esplit"
 
+if USB_DEVICE_STACK
+
+config USB_NRFX
+    default y
+
+endif # USB_DEVICE_STACK
+
+config BT_CTLR
+    default BT
+
 endif
