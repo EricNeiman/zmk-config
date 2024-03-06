@@ -1,6 +1,6 @@
 if SHIELD_ESPLIT
 
-config ZMK_Keyboard_NAME
+config ZMK_KEYBOARD_NAME
     default "esplit"
 
 endif
