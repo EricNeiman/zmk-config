@@ -22,3 +22,5 @@ include:
     shield: esplit_left
   - board: nice_nano_v2
     shield: esplit_right
+  - board: nice_nano_v2
+    shield: settings_reset
