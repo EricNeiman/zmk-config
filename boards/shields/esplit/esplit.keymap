@@ -7,7 +7,7 @@
     compatible = "zmk,keymap";
     default_layer {
       bindings = <
-        &kp GRAVE   &kp 1     &kp 2     &kp 3     &kp 4     &kp 5     &kp 6
+        &kp GRAVE   &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6
         &kp TAB     &kp Q     &kp W     &kp E     &kp R     &kp T     &kp F5
         &kp CAPS    &kp A     &kp S     &kp D     &kp F     &kp G     &kp F10
         &kp LSHIFT  &kp Z     &kp X     &kp C     &kp V     &kp B     &kp F12
