@@ -1,0 +1,11 @@
+#include "iris.dtsi"
+
+kscan0: kscan {
+  col-gpios = <&pro_micro 16 GPIO_ACTIVE_HIGH>, // C0
+              <&pro_micro 14 GPIO_ACTIVE_HIGH>, // C1
+              <&pro_micro 15 GPIO_ACTIVE_HIGH>, // C2
+              <&pro_micro 18 GPIO_ACTIVE_HIGH>, // C3
+              <&pro_micro 19 GPIO_ACTIVE_HIGH>, // C4
+              <&pro_micro 20 GPIO_ACTIVE_HIGH>, // C5
+              <&pro_micro 21 GPIO_ACTIVE_HIGH>; // C6
+};

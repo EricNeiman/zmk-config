@@ -19,6 +19,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: esplit
-  # - board: nice_nano_v2
-  #   shield: esplit_right
+    shield: esplit_left
+  - board: nice_nano_v2
+    shield: esplit_right
