@@ -1,4 +1,4 @@
-#include "iris.dtsi"
+#include "esplit.dtsi"
 
 kscan0: kscan {
   col-gpios = <&pro_micro 16 GPIO_ACTIVE_HIGH>, // C0
