@@ -12,12 +12,16 @@
       ctrl_win_left: ctrl_win_left {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&macro_tap &kp LCTRL &kp LGUI &kp LEFT>;
+        bindings = <&macro_press &kp LCTRL &kp LGUI>,
+                   <&macro_tap &kp LEFT>,
+                   <&macro_release &kp LCTRL &kp LGUI>;
       };
       ctrl_win_right: ctrl_win_right {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&macro_tap &kp LCTRL &kp LGUI &kp RIGHT>;
+        bindings = <&macro_press &kp LCTRL &kp LGUI>,
+                   <&macro_tap &kp RIGHT>,
+                   <&macro_release &kp LCTRL &kp LGUI>;
       };
   };
 };
