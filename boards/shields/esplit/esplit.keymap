@@ -39,6 +39,13 @@
                    <&macro_tap &kp F4>,
                    <&macro_release &kp LALT>;
       };
+      ctrl_shift_r: ctrl_shift_r {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&macro_press &kp LCTRL &kp LSHIFT>,
+                   <&macro_tap &kp R>,
+                   <&macro_release &kp LCTRL &kp LSHIFT>;
+      };
   };
 };
 
@@ -69,7 +76,7 @@
         &kp ESC          &kp F1           &kp F2          &kp F3          &kp F4          &kp F5          &kp F6                    &kp F7               &kp F8          &kp F9          &kp F10         &kp F11           &kp F12          &kp DEL
         &trans           &trans           &kp UP          &trans          &trans          &trans          &kp PSCRN                 &trans               &trans          &trans          &trans          &trans            &trans           &trans
         &trans           &kp LEFT         &kp DOWN        &kp RIGHT       &trans          &trans          &trans                    &trans               &trans          &trans          &trans          &trans            &trans           &trans
-        &trans           &trans           &trans          &trans          &trans          &trans          &trans                    &trans               &trans          &ctrl_alt_home  &ctrl_win_left  &ctrl_win_right   &kp UP           &trans
+        &trans           &trans           &trans          &trans          &trans          &trans          &ctrl_shift_r             &trans               &trans          &ctrl_alt_home  &ctrl_win_left  &ctrl_win_right   &kp UP           &trans
         &trans           &trans           &trans          &ctrl_shift_esc &trans          &trans          &trans                    &trans               &trans          &trans          &kp END         &kp LEFT          &kp DOWN         &kp RIGHT
       >;
     };
