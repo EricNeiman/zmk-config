@@ -70,7 +70,7 @@
         &kp LSHIFT        &kp Z           &kp X           &kp C           &kp V           &kp B           &kp F5                    &kp C_PP             &kp N           &kp M           &kp COMMA       &kp DOT           &kp FSLH         &kp RSHIFT
         &kp LCTRL         &kp LGUI        &kp LALT        &kp ESC         &mo 2           &mo 1           &kp SPACE                 &kp ENTER            &mo 1           &mo 2           &kp HOME        &kp END           &kp LBKT         &kp RBKT
       >;
-    };h
+    };
     lower_layer {
       bindings = <
         &kp ESC          &kp F1           &kp F2          &kp F3          &kp F4          &kp F5          &kp F6                    &kp F7               &kp F8          &kp F9          &kp F10         &kp F11           &kp F12          &kp DEL
