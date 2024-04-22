@@ -46,6 +46,13 @@
                    <&macro_tap &kp R>,
                    <&macro_release &kp LCTRL &kp LSHIFT>;
       };
+      win_l: win_l {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&macro_press &kp LGUI>,
+                   <&macro_tap &kp L>,
+                   <&macro_release &kp LGUI>;
+      };
   };
 };
 
@@ -75,7 +82,7 @@
       bindings = <
         &kp ESC          &kp F1           &kp F2          &kp F3          &kp F4          &kp F5          &kp F6                    &kp F7               &kp F8          &kp F9          &kp F10         &kp F11           &kp F12          &kp DEL
         &trans           &trans           &kp UP          &trans          &trans          &trans          &kp PSCRN                 &trans               &trans          &trans          &trans          &trans            &trans           &kp INS
-        &trans           &kp LEFT         &kp DOWN        &kp RIGHT       &trans          &trans          &trans                    &trans               &trans          &trans          &trans          &trans            &trans           &trans
+        &trans           &kp LEFT         &kp DOWN        &kp RIGHT       &trans          &trans          &trans                    &trans               &trans          &trans          &trans          &win_l            &trans           &trans
         &trans           &trans           &trans          &trans          &trans          &trans          &ctrl_shift_r             &kp C_MUTE           &trans          &ctrl_alt_home  &ctrl_win_left  &ctrl_win_right   &kp UP           &trans
         &trans           &trans           &trans          &ctrl_shift_esc &trans          &trans          &trans                    &trans               &trans          &trans          &kp END         &kp LEFT          &kp DOWN         &kp RIGHT
       >;
