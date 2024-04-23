@@ -92,7 +92,7 @@
 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp F6                                          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11        &kp F12
 &trans          &trans          &kp UP          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &trans         &trans
 &trans          &kp LEFT        &kp DOWN        &kp RIGHT       &trans          &trans                                          &trans          &trans          &trans          &trans          &trans         &trans
-&trans          &trans          &trans          &trans          &trans          &trans          &ctrl_shift_r   &ctrl_shift_esc &trans          &ctrl_alt_home  &ctrl_win_left  &ctrl_win_right &trans         &trans
+&kp CAPS        &trans          &trans          &trans          &trans          &trans          &ctrl_shift_r   &ctrl_shift_esc &trans          &trans          &trans          &trans          &trans         &trans
                                                 &trans          &trans          &trans          &trans          &trans          &trans          &kp MINUS       &kp EQUAL
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -103,7 +103,7 @@
 &trans          &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &trans          &kp DEL
 &trans          &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &trans          &kp INS
 &trans          &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &win_l          &kp UP          &trans
-&trans          &trans          &trans          &trans          &trans          &trans          &trans          &kp C_PP        &trans          &trans          &trans          &kp LEFT        &kp DOWN        &kp RIGHT
+&trans          &trans          &trans          &trans          &trans          &trans          &kp PSCRN       &kp C_PP        &ctrl_alt_home  &ctrl_win_left  &ctrl_win_right &kp LEFT        &kp DOWN        &kp RIGHT
                                                 &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
