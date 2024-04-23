@@ -6,6 +6,7 @@ url: https://github.com/kata0510/Lily58
 requires: [pro_micro]
 features:
   - keys
+  - display
 siblings:
   - lily58_left
   - lily58_right
