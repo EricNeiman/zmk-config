@@ -100,10 +100,10 @@
         raise_layer {
             bindings = <
 
-&trans          &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &trans          &kp DEL
-&trans          &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &trans          &kp INS
-&trans          &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &win_l          &kp UP          &trans
-&trans          &trans          &trans          &trans          &trans          &trans          &kp PSCRN       &kp C_PP        &ctrl_alt_home  &ctrl_win_left  &ctrl_win_right &kp LEFT        &kp DOWN        &kp RIGHT
+&trans          &kp N7          &kp N8          &kp N9          &trans          &trans                                          &trans          &trans          &trans          &trans          &trans          &kp DEL
+&trans          &kp N4          &kp N5          &kp N6          &trans          &trans                                          &trans          &trans          &trans          &trans          &trans          &kp INS
+&trans          &kp N1          &kp N2          &kp N3          &trans          &trans                                          &trans          &trans          &trans          &win_l          &kp UP          &trans
+&trans          &kp N0          &trans          &kp RET         &trans          &trans          &kp PSCRN       &kp C_PP        &ctrl_alt_home  &ctrl_win_left  &ctrl_win_right &kp LEFT        &kp DOWN        &kp RIGHT
                                                 &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
