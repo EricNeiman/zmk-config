@@ -43,9 +43,5 @@ include:
   # - board: nice_nano_v2
   #   shield: sofle_right
 
-  # - board: nice_nano_v2
-  #   shield: settings_reset
-
-
-  - board: technikable
-  - board: technikable@1.1
+  - board: nice_nano_v2
+    shield: settings_reset
