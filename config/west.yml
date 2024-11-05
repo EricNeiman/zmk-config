@@ -15,5 +15,4 @@ manifest:
       remote: caksoylar
       revision: main
   self:
-  self:
     path: config
