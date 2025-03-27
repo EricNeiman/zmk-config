@@ -79,7 +79,7 @@
   };
 
   keymap {
-    compatible = "zmk,conditional-layers";
+    compatible = "zmk,keymap";
     default_layer {
       display_name = "default";
       bindings = <
