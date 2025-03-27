@@ -81,7 +81,7 @@
 
 / {
         keymap {
-                compatible = "zmk,keymap";
+                compatible = "zmk,conditional-layers";
                 default_layer {
                         display_name = "default";
                         bindings = <
@@ -109,7 +109,7 @@
                                                 &kp LGUI        &trans          &kp SPACE       &kp RET         &trans          &kp RALT
                         >;
                 };
-                pairing_layer {
+                adjust_layer {
                         display-name = "adjust";
                         bindings = <
 &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_CLR      &soft_off       &none           &none           &none           &none           &kp PSCRN
