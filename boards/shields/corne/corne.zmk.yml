@@ -4,12 +4,13 @@ name: Corne
 type: shield
 url: https://github.com/foostan/crkbd/
 requires: [pro_micro]
-exposes: [i2c_oled]
+exposes: [i2c_oled, i2c_glidepoint]
 features:
   - keys
   - display
   - underglow
   - studio
+  - glidepoint
 siblings:
   - corne_left
   - corne_right
