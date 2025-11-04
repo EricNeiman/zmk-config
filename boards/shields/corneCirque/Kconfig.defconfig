@@ -30,6 +30,9 @@ config I2C
 
 endif
 
+config ZMK_USB
+    default y
+
 if LVGL
 
 config LV_Z_VDB_SIZE
