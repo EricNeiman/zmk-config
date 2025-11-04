@@ -1,6 +1,6 @@
 file_format: "1"
-id: corne
-name: Corne
+id: corneCirque
+name: CorneCirque
 type: shield
 url: https://github.com/foostan/crkbd/
 requires: [pro_micro]
@@ -12,5 +12,5 @@ features:
   - studio
   - glidepoint
 siblings:
-  - corne_left
-  - corne_right
+  - corneCirque_left
+  - corneCirque_right

@@ -1,16 +1,9 @@
-if SHIELD_CORNE_LEFT
+if SHIELD_CORNECIRQUE_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Corne"
+    default "CorneCirque"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-endif
-
-if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT
-
-config ZMK_SPLIT
     default y
 
 if ZMK_DISPLAY
@@ -22,6 +15,20 @@ config SSD1306
     default y
 
 endif # ZMK_DISPLAY
+
+endif
+
+if SHIELD_CORNECIRQUE_LEFT || SHIELD_CORNECIRQUE_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+if CONFIG_ZMK_POINTING && SHIELD_CORNECIRQUE_RIGHT
+
+config I2C
+    default y
+
+endif
 
 if LVGL
 

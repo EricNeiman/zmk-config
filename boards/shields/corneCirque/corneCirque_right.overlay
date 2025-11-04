@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "corne.dtsi"
+#include "corneCirque.dtsi"
 
 &default_transform {
     col-offset = <6>;
@@ -28,24 +28,17 @@
 &pro_micro_i2c {
     status = "okay";
 
-    glidepoint_split: glidepoint_split@0 {
+    glidepoint: glidepoint@2a {
         compatible = "cirque,pinnacle";
-        reg = <0>;
+        reg = <0x2a>;
         status = "okay";
-        dr-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH)>; // DR pin on cirque is always &vik_conn 5
+        dr-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH)>;
 
         sensitivity = "4x";
-        sleep;
         no-taps;
+        rotate-90;
+        x-invert;
+        y-invert;
     };
 };
 
-// / {
-//     glidepoint_input: glidepoint_input {
-//         compatible = "zmk,input-listener";
-//         device = <&glidepoint>;
-
-//         // Options for cirque, to be defined in the keyboard shield
-//         // input-processors = <&xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT) &xy_scaler 3 2>;
-//     };
-// };
