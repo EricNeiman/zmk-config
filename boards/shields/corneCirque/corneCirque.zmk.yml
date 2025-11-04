@@ -11,6 +11,7 @@ features:
   - underglow
   - studio
   - glidepoint
+  - usb_logging
 siblings:
   - corneCirque_left
   - corneCirque_right
