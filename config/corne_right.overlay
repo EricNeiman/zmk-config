@@ -22,10 +22,16 @@
     };
 };
 
+/* Peripheral (Right) half: bridges tps43 input events over BLE split link to central */
 / {
-    trackpad_listener {
-        compatible = "zmk,input-listener";
-        device = <&tps43>;
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackpad_split: trackpad_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+            device = <&tps43>;
+        };
     };
 };
-
