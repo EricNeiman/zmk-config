@@ -1,3 +1,5 @@
+#include <dt-bindings/zmk/input_transform.h>
+
 /* Central (Left) half: receives trackpad events from peripheral via input-split */
 / {
     split_inputs {
@@ -13,6 +15,6 @@
     trackpad_listener: trackpad_listener {
         compatible = "zmk,input-listener";
         device = <&trackpad_split>;
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>;
     };
 };
-
