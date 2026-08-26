@@ -1,7 +1,18 @@
 #include <dt-bindings/zmk/input_transform.h>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 /* Central (Left) half: receives trackpad events from peripheral via input-split */
 / {
+    input_processors {
+        zip_xy_transform: zip_xy_transform {
+            compatible = "zmk,input-processor-transform";
+            #input-processor-cells = <1>;
+            type = <INPUT_EV_REL>;
+            x-codes = <INPUT_REL_X>;
+            y-codes = <INPUT_REL_Y>;
+        };
+    };
+
     split_inputs {
         #address-cells = <1>;
         #size-cells = <0>;
