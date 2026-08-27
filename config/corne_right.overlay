@@ -12,9 +12,10 @@
 
         /* Gesture & Feature Configuration */
         one-finger-tap;
-        press-and-hold;
-        press-and-hold-time = <250>;
         two-finger-tap;
+        press-and-hold;
+        press-and-hold-time = <350>;
+        stationary-threshold = <12>;
         scroll;
         /* natural-scroll-y; */
         /* natural-scroll-x; */
