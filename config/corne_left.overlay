@@ -11,6 +11,14 @@
             x-codes = <INPUT_REL_X>;
             y-codes = <INPUT_REL_Y>;
         };
+
+        zip_scroll_transform: zip_scroll_transform {
+            compatible = "zmk,input-processor-transform";
+            #input-processor-cells = <1>;
+            type = <INPUT_EV_REL>;
+            x-codes = <INPUT_REL_HWHEEL>;
+            y-codes = <INPUT_REL_WHEEL>;
+        };
     };
 
     split_inputs {
@@ -26,6 +34,8 @@
     trackpad_listener: trackpad_listener {
         compatible = "zmk,input-listener";
         device = <&trackpad_split>;
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+        input-processors =
+            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+            <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
     };
 };
