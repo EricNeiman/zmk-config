@@ -12,6 +12,14 @@
             y-codes = <INPUT_REL_Y>;
         };
 
+        zip_xy_scaler: zip_xy_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_X>, <INPUT_REL_Y>;
+            track-remainders;
+        };
+
         zip_scroll_transform: zip_scroll_transform {
             compatible = "zmk,input-processor-transform";
             #input-processor-cells = <1>;
@@ -44,7 +52,8 @@
         device = <&trackpad_split>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+            <&zip_xy_scaler 2 1>,
             <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-            <&zip_scroll_scaler 2 1>;
+            <&zip_scroll_scaler 4 1>;
     };
 };
