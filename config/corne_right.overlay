@@ -14,8 +14,8 @@
         one-finger-tap;
         two-finger-tap;
         press-and-hold;
-        press-and-hold-time = <350>;
-        stationary-threshold = <18>;
+        press-and-hold-time = <450>;
+        stationary-threshold = <35>;
         bottom-beta = <10>;
         scroll;
         /* natural-scroll-y; */
