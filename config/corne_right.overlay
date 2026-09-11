@@ -16,7 +16,7 @@
         press-and-hold;
         press-and-hold-time = <450>;
         stationary-threshold = <35>;
-        bottom-beta = <10>;
+        bottom-beta = <50>;
         scroll;
         /* natural-scroll-y; */
         /* natural-scroll-x; */
