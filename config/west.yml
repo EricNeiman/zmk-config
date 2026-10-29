@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
     - name: aym1607
       url-base: https://github.com/AYM1607
   projects:
@@ -9,6 +11,9 @@ manifest:
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: v0.3
     - name: zmk-driver-azoteq-iqs5xx
       remote: aym1607
       revision: main
