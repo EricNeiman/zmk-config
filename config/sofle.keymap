@@ -1,4 +1,4 @@
-/*
+and just andgoawayoh whoa what is this/*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -45,7 +45,7 @@
     ctrl_shift_esc: ctrl_shift_esc {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&macro_press &kp LCTRL &kp LSHIFT>,
+      bindings = <&macro_press &kp LCTRL &kp LSHIFT>, never like appears andit justdoesn't want tologin likeI don't know like that thenetwork tab to see how website
                   <&macro_tap &kp ESC>,
                   <&macro_release &kp LCTRL &kp LSHIFT>;
     };
@@ -84,6 +84,20 @@
                   <&macro_tap &kp RIGHT>,
                   <&macro_release &kp LCTRL>;
     };
+    ctrl_tab: ctrl_tab {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&macro_press &kp LCTRL>,
+                  <&macro_tap &kp TAB>,
+                  <&macro_release &kp LCTRL>;
+    };
+    ctrl_shift_tab: ctrl_shift_tab {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&macro_press &kp LCTRL &kp LSHIFT>,
+                  <&macro_tap &kp TAB>,
+                  <&macro_release &kp LCTRL &kp LSHIFT>;
+    };
   };
 };
 
@@ -115,9 +129,9 @@
             display-name = "lower";
             bindings = <
 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp F6                                          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11        &kp DEL
-&kp GRAVE       &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                                          &kp N6          &kp N7          &kp N8          &kp N9          &kp N0         &trans
-&trans          &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans                                          &kp F1          &kp F2          &kp F3          &kp F4          &kp F5         &kp F6
-&trans          &trans          &ctrl_left      &ctrl_right     &kp HOME        &kp END         &trans          &trans          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11        &kp F12
+&ctrl_tab       &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                                          &kp N6          &kp N7          &kp N8          &kp N9          &kp N0          &kp DEL
+&trans          &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans                                          &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp F6
+&trans          &kp HOME        &ctrl_left      &ctrl_right     &kp END         &kp ESC         &trans          &trans          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11         &kp F12
                                 &ctrl_shift_r   &ctrl_shift_esc &trans          &trans          &trans          &trans          &trans          &trans          &kp HOME        &kp END
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -126,9 +140,9 @@
             display-name = "raise";
             bindings = <
 &trans          &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &trans          &kp DEL
-&trans          &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT                                       &kp CARET       &kp AMPS        &kp ASTRK       &kp LPAR        &kp RPAR        &kp INS
-&trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT &trans                                          &kp MINUS       &kp EQUAL       &kp LBKT        &kp RBKT        &kp BSLH        &kp GRAVE
-&trans          &trans          &trans          &trans          &mkp MB1        &mkp MB2        &trans          &trans          &kp UNDER       &kp PLUS        &kp LBRC        &kp RBRC        &kp PIPE        &kp TILDE
+&ctrl_shift_tab &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT                                       &kp CARET       &kp AMPS        &kp ASTRK       &kp LPAR        &kp RPAR       &kp BSPC
+&trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT &kp F5                                          &kp MINUS       &kp EQUAL       &kp LBKT        &kp RBKT        &kp BSLH       &kp GRAVE
+&trans          &none           &none           &none           &mkp MB1        &mkp MB2        &trans          &trans          &kp UNDER       &kp PLUS        &kp LBRC        &kp RBRC        &kp PIPE       &kp TILDE
                                 &trans          &trans          &trans          &trans          &trans          &trans          &trans          &ctrl_alt_home  &ctrl_win_left  &ctrl_win_right
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -136,7 +150,7 @@
         adjust_layer {
             display-name = "adjust";
             bindings = <
-&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_CLR                                      &soft_off       &none           &none           &none           &none           &ext_power EP_ON
+&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &none                                           &soft_off       &none           &none           &none           &none           &bt BT_CLR 
 &none           &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                                 &none           &none           &none           &none           &none           &ext_power EP_OFF
 &none           &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &rgb_ug RGB_TOG                                 &kp PSCRN       &none           &none           &none           &none           &ext_power EP_TOG
 &none           &none           &none           &none           &none           &none           &none           &none           &ctrl_alt_home  &ctrl_win_left  &ctrl_win_right &none           &none           &none
