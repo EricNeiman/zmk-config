@@ -1,4 +1,4 @@
-and just andgoawayoh whoa what is this/*
+/*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -45,7 +45,7 @@ and just andgoawayoh whoa what is this/*
     ctrl_shift_esc: ctrl_shift_esc {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&macro_press &kp LCTRL &kp LSHIFT>, never like appears andit justdoesn't want tologin likeI don't know like that thenetwork tab to see how website
+      bindings = <&macro_press &kp LCTRL &kp LSHIFT>,
                   <&macro_tap &kp ESC>,
                   <&macro_release &kp LCTRL &kp LSHIFT>;
     };
